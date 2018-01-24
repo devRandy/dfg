@@ -5,7 +5,7 @@ export class SectionConfig {
     sectionPermission: string[];
     loadConfig: ActionConfig;
     saveConfig: ActionConfig;
-    additionalConfig: ActionConfig[];
+    additionalActionConfig: ActionConfig[];
     subSectionConfig: SectionConfig[];
 }
 
@@ -16,10 +16,4 @@ export class ActionConfig {
     actionApiURL: string;
     permission: string[];
     actionDescription: string;
-}
-
-
-export class FormControl {
-    type: string;
-    label: string;
 }
