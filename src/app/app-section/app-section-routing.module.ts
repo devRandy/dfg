@@ -16,9 +16,14 @@ const routes: Routes = [
         component: AppSectionTemplateComponent,
         children : [
             {
-                path: ':subSectionName/:param',
+                path: ':subSectionName/:paramId',
                 component: AppSectionRenderComponent
-            }
+            },
+            // {
+            //     path: ':subSectionName/:param/:subParam',
+            //     component: AppSectionRenderComponent
+            // }
+
         ]
     }
 ];

@@ -13,9 +13,9 @@ import { AppRoutingModule } from './app-routing.module';
   ],
   imports: [
     BrowserModule,
-    AppSectionModule,
     RouterModule,
 
+    AppSectionModule,
     AppRoutingModule
   ],
   providers: [],
