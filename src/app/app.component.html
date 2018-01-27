@@ -7,9 +7,13 @@
     
     <div id="headerNav">
       <ul>
-        <li><a href="#/app-section/main-section1/sub-section1/1">Section 1</a></li>
-        <li><a href="#/app-section/main-section2/sub-section2/2">Section 2</a></li>
-        <li><a href="#/app-section/main-section3/sub-section3/3">Section 3</a></li>
+        
+        <li *ngFor="let config of masterAppService.masterConfig">
+          <!-- <a [href]="'#/app-section/main-section1/sub-section1/1'">{{config.sectionName}}</a> -->
+          <a [href]="config.sectionLink">{{config.sectionName}}</a>
+        </li>
+        <!-- <li><a href="#/app-section/main-section2/sub-section2/2">Section 2</a></li>
+        <li><a href="#/app-section/main-section3/sub-section3/3">Section 3</a></li> -->
       </ul>
      </div> 
 

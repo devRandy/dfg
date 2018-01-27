@@ -24,3 +24,27 @@ export const masterAppConfig = [
         }
     }
 ];
+
+
+export const taxDashboard = [
+    {
+        sectionName: 'Tax Form',
+        sectionDescription : 'Loads Tax Form',
+        sectionController: 'taxForm',
+        sectionPermission: ['tax-form'],
+        loadConfig: {
+            actionName: 'load',
+            permission:  ['tax-form']
+        },
+    },
+    {
+        sectionName: 'Tax Validation',
+        sectionDescription : 'Loads Tax Validation',
+        sectionController: 'validation',
+        sectionPermission: ['tax-validation'],
+        loadConfig: {
+            actionName: 'load',
+            permission:  ['tax-validation']
+        }
+    }
+];

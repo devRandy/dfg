@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppComponent } from './app.component';
 import { AppSectionModule } from './app-section/app-section.module';
 import { AppRoutingModule } from './app-routing.module';
+import { AppConfigModule } from './app-config/app-config.module';
 
 
 @NgModule({
@@ -15,6 +16,7 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     RouterModule,
 
+    AppConfigModule,
     AppSectionModule,
     AppRoutingModule
   ],
